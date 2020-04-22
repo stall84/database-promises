@@ -1,0 +1,29 @@
+{
+  "name": "database-promises",
+  "version": "1.0.0",
+  "description": "Practicing javascript promises with SQL queries",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"test\"",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stall84/database-promises.git"
+  },
+  "keywords": [
+    "database",
+    "promise",
+    "sql",
+    "js"
+  ],
+  "author": "Michael E Stallings",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stall84/database-promises/issues"
+  },
+  "homepage": "https://github.com/stall84/database-promises#readme",
+  "dependencies": {
+    "pg-promise": "^10.5.1"
+  }
+}
