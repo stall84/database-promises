@@ -3,12 +3,23 @@ const config = {
     host: 'localhost',
     port: 5432,
     database: 'restaurant',
-    user: 'MES'
+    user: 'postgres'
 };
 
-const pgp = require('pg-promise');
+const pgp = require('pg-promise')();
 const db = pgp(config);
 
 
 
-console.log(db);
+db.query('SELECT * FROM restaurant')
+    .then((results) => {
+        results.forEach((row) => {
+            console.log(row);
+            console.log(row.id, row.name);
+        })
+    })
+    .catch((err) => {
+        console.error('There was an error, oops!' + err);
+    })
+
+    pgp.end();
