@@ -24,6 +24,6 @@
   },
   "homepage": "https://github.com/stall84/database-promises#readme",
   "dependencies": {
-    "pg-promise": "^10.5.1"
+    "pg-promise": "^10.15.4"
   }
 }
